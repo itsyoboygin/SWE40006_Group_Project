@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .title {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a:hover,
+.current {
+    background-color: #bfa7ff;
+    min-height: max-content;
+}
+
+.content {
+    min-height: fit-content;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding-top: 10px;
+    width: 75%;
+    bottom: 10px;
+    margin-bottom: -100px;
+    font-size: 1em;
+}
+
+.section{
+    display: block;
+    float: left;
+    width: 50%;
+    margin-top: 4px;
+}
+
+.section p{
+    float: right;
+    width: 20%;
+    text-align: left;
+}
+
+.section-content{
+    display: block;
+    float: left;
+    width: 50%;
+    margin-top: 4px;
+}
+
+.section-content p{
+    float: left;
+    width: 60%;
+    text-align: left;
+}
+
+.declaration {
+    display: block;
+    float: right;
+    width: 60%;
+    margin-top: 4px;
+}
+
+.declaration p{
+    float: left;
+    width: 41%;
+    text-align: left;
+    margin-top: 4px;
+}
+
+.highlight {
+    background-color: #bfa7ff;
+    color: #000;
+    padding: 2px 5px;
+}
+
+.about {
+    display: block;
+    float: right;
+    width: 85%;
+    margin-top: 4px;
+}
+
+.about p{
+    text-align: left;
+}
+
+.centered-bullets {
+    width: 100%;
+    max-width: 600px; /* Adjust maximum width as needed */
+    margin: 0 auto; /* Centers the list horizontally */
+    text-align: left; /* Ensures text alignment of list items */
+    padding-left: 15px; /* Creates space for the bullet points */
+}
+
+.centered-bullets li {
+    margin-bottom: 10px; /* Adjust margin between list items */
+    list-style: disc; /* Use disc bullets; you can use other list styles like circle, square, etc. */
+}
+
+.pics{
+    display: inline-block;
+    width: 50%;
+    align-items: center;
+    border-top: 1px solid;
+}
