@@ -7,10 +7,10 @@ mysqli_report(MYSQLI_REPORT_OFF);
 // $pswd = "181202";
 // $dbnm = "s103847381_db";
 
-$host = "my-phpapp-server.mysql.database.azure.com"; // Replace with Azure MySQL hostname
-$user = "phucdoox@gmail.com"; // Replace with Azure username
-$pswd = "Phucdo1812@"; // Replace with Azure password
-$dbnm = "my-phpapp-server"; // Replace with Azure database name
+$host = getenv("swe40006group2project-server.mysql.database.azure.com"); // Replace with Azure MySQL hostname
+$user = getenv("phucdoox@gmail.com"); // Replace with Azure username
+$pswd = getenv("Phucdo1812@"); // Replace with Azure password
+$dbnm = getenv("swe40006group2project-server"); // Replace with Azure database name
 
 $table1 = "friends";
 $table2 = "myfriends";
