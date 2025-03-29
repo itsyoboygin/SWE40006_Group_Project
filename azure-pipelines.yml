@@ -14,7 +14,7 @@ variables:
   webAppName: 'SWE40006Group2Project'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'ubuntu-20.04'
 
   # Environment name
   environmentName: 'SWE40006Group2Project'
@@ -26,7 +26,7 @@ stages:
 - stage: Build
   displayName: Build stage
   variables:
-    phpVersion: '8.2'
+    phpVersion: '8.3'
   jobs:
   - job: BuildJob
     pool:
@@ -45,6 +45,9 @@ stages:
     - script: composer install --no-interaction --prefer-dist --optimize-autoloader
       workingDirectory: $(rootFolder)
       displayName: 'Composer install'
+      
+    - script: ./phpunit
+      displayName: 'Run tests with phpunit'
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
