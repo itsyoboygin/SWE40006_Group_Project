@@ -22,7 +22,7 @@
         </div>
     </header>
     <main>
-        <h1 style="text-align:center">Home Page</h1>
+        <h1 style="text-align:center">Project Index</h1>
         <div class="content">
             <div>
                 <div class="section">
